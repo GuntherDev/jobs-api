@@ -22,12 +22,12 @@ paths:
               allOf:
               - $ref: '#/components/schemas/RegisterUserRequest'
               - example:
-                  name: lara
-                  email: larinhalele@gmail.com
+                  name: Rose
+                  email: bluecupcake@gmail.com
                   password: secret
             example:
-              name: lara
-              email: larinhalele@gmail.com
+              name: Rose
+              email: bluecupcake@gmail.com
               password: secret
         required: true
       responses:
@@ -51,10 +51,10 @@ paths:
               allOf:
               - $ref: '#/components/schemas/LoginUserRequest'
               - example:
-                  email: rafaelzinho12@gmail.com
+                  email: lilraph12@gmail.com
                   password: secret
             example:
-              email: rafaelzinho12@gmail.com
+              email: lilraph12@gmail.com
               password: secret
         required: true
       responses:
@@ -79,10 +79,10 @@ paths:
               - $ref: '#/components/schemas/CreateJobRequest'
               - example:
                   company: Blizzard
-                  position: Muié
+                  position: HR
             example:
               company: Blizzard
-              position: Muié
+              position: HR
         required: true
       responses:
         '200':
@@ -148,7 +148,7 @@ paths:
               - $ref: '#/components/schemas/UpdateJobRequest'
               - example:
                   company: Blizzard
-                  position: gostosa
+                  position: CEO
             example:
               company: Blizzard
               position: gostosa
@@ -190,8 +190,8 @@ components:
         password:
           type: string
       example:
-        name: lara
-        email: larinhalele@gmail.com
+        name: Rose
+        email: bluecupcake@gmail.com
         password: secret
     LoginUserRequest:
       title: LoginUserRequest
@@ -205,7 +205,7 @@ components:
         password:
           type: string
       example:
-        email: rafaelzinho12@gmail.com
+        email: lilraff12@gmail.com
         password: secret
     CreateJobRequest:
       title: CreateJobRequest
@@ -220,7 +220,7 @@ components:
           type: string
       example:
         company: Blizzard
-        position: Muié
+        position: Database Engineer
     UpdateJobRequest:
       title: UpdateJobRequest
       required:
